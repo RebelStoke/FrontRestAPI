@@ -1,0 +1,17 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.icon{
+  color: white;
+  font-size: 250px;
+  padding: 20px;
+  outline: 0;
+}
+
+.icon:hover{
+  color: #858485;
+}

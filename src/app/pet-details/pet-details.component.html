@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="container2">
+  <div class="listBox">
+    <div>
+      <ul class="label">
+      <li>Id:</li>
+      <li>Name:</li>
+      <li>Type:</li>
+      <li>BirthDate:</li>
+      <li>SoldDate:</li>
+      <li>Color:</li>
+      <li>PreviousOwner:</li>
+      <li>Price:</li>
+    </ul></div>
+    <div class="placeholder" *ngIf="pet">
+      <ul>
+        <li><input  [(ngModel)]="pet.id" placeholder="id"/></li>
+        <li><input  [(ngModel)]="pet.name" placeholder="name"/></li>
+        <li><input  [(ngModel)]="pet.type" placeholder="type"/></li>
+        <li><input  [(ngModel)]="pet.birthDate" placeholder="birthDate"/></li>
+        <li><input  [(ngModel)]="pet.soldDate" placeholder="soldDate"/></li>
+        <li><input  [(ngModel)]="pet.color" placeholder="color"/></li>
+        <li><input  [(ngModel)]="pet.previousOwner" placeholder="PreviousOwner"/></li>
+        <li><input  [(ngModel)]="pet.price" placeholder="price"/></li>
+      </ul>
+    </div>
+    <div style="align-self: center">
+    </div>
+  </div>
+    <button (click)="save()" id="saveButton">Save</button>
+  </div>
+</div>
